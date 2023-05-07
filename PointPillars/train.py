@@ -338,8 +338,8 @@ if __name__ == '__main__':
     # the path of dataset
     #数据集的绝对路径
     parser.add_argument('--dataset_root', \
-                        # default='/media/chris/Workspace/Dataset/3d-object-detection-for-autonomous-vehicles/kitti_format/',
-                        default='/media/chris/Workspace/Dataset/kitti/',
+                        default='/media/chris/Workspace/Dataset/3d-object-detection-for-autonomous-vehicles/kitti_format/',
+                        # default='/media/chris/Workspace/Dataset/kitti/',
                         help='the root path of dataset')
     parser.add_argument('--batchSize', type=int, default=6, help='input batch size')
     parser.add_argument('--num_workers', type=int, default=4)       #多少进程
