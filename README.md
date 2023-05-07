@@ -76,8 +76,6 @@ PointPillars this folder works for implement PointPillars algorithm and training
 ├── __pycache__
 ├── rename.sh
 ├── summary
-├── test2.py
-├── test.py
 ├── train.py
 ├── trial_1_checkpoints
 ├── trial_1_summary
