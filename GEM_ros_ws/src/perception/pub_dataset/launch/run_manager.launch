@@ -1,0 +1,23 @@
+<launch>
+    <!-- Param for rviz -->
+
+    <!-- run kitti node-->
+    <!-- <remap from="/kitti/velo/pointcloud" to="/points_raw" />  -->
+    <node pkg="pub_dataset" type="kitti_node.py"    name="pub_dataset_node" output="screen" />
+
+    <!-- Import point pillars launch -->
+    <!-- <node pkg="pointpillars" type="pointpillars_node.py"    name="pointpillars_node"    output="screen"/> -->
+
+    <node pkg="detected_objects_visualizer" type="visualize_detected_objects" name="point_pillars_visualization_01"
+        output="screen"  ns="/detection/lidar_detector"/>
+    
+    <node
+    name="robot_transform_broadcaster_1"
+    pkg="tf2_ros"
+    type="static_transform_publisher"
+    args="0 0 0 0 0 0 /map /base_link"/>
+    
+
+    <!-- Rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pub_dataset)/rviz/kitti_rviz.rviz" />
+</launch>
