@@ -2,6 +2,26 @@
 
 3D object detection is a fundamental task in autonomous driving, robotics, and computer vision applications. It aims to identify and locate objects in 3D space using various sensor data, such as LiDAR point clouds, images, or depth maps. Accurate and efficient 3D object detection is crucial for the safe and effective operation of autonomous systems, as it provides essential information for decision-making, path planning, and navigation. In this project, we reimplement the PointPillars algorithm to realize 3D object detection based on PyTorch. Recognition types include vehicles, pedestrians, and cyclists. In the experimental part, the algorithm is tested on the GEM vehicle and KITTI dataset.
 
+#### Result
+
+##### KITTI ROS TEST
+
+[![KITTI ROS TEST](https://res.cloudinary.com/marcomontalbano/image/upload/v1683487276/video_to_markdown/images/youtube--HrnisTXsBnI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/HrnisTXsBnI "KITTI ROS TEST")
+
+
+
+##### GEM PointPillars on Parking Lots Environment
+
+[![GEM PointPillars on Parking Lots Environment](https://res.cloudinary.com/marcomontalbano/image/upload/v1683504001/video_to_markdown/images/youtube--esFYqR___zI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/esFYqR___zI "GEM PointPillars on Parking Lots Environment")
+
+##### GEM PointPillar Detect Vehicle
+
+[![GEM PointPillar Detect Vehicle](https://res.cloudinary.com/marcomontalbano/image/upload/v1683503963/video_to_markdown/images/youtube--R3qUu3Bc-9U-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/R3qUu3Bc-9U "GEM PointPillar Detect Vehicle")
+
+##### GEM PointPillar to Detect Pedestrian
+
+[![GEM PointPillar to Detect Pedestrian](https://res.cloudinary.com/marcomontalbano/image/upload/v1683504073/video_to_markdown/images/youtube--eXONjJd3fH0-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/eXONjJd3fH0 "GEM PointPillar to Detect Pedestrian")
+
 #### GEM_ROS_WS
 
 GEM_ros_ws this folder is the workspace of this project on GEM vehicle. This is a ros workspace. The File structure of this folder is shown as follows:
@@ -100,8 +120,3 @@ PointPillars this folder works for implement PointPillars algorithm and training
 python train --dataset_root='root path of dataset'
 ```
 
-#### Result
-
-##### KITTI ROS TEST
-
-[![KITTI ROS TEST](https://res.cloudinary.com/marcomontalbano/image/upload/v1683487276/video_to_markdown/images/youtube--HrnisTXsBnI-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/HrnisTXsBnI "KITTI ROS TEST")
