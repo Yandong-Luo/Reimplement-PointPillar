@@ -33,11 +33,11 @@ def pkl_process(dataset_root,generate_label, db, prefix, data_type):
     split = 'training' if generate_label else 'testing'
     # 根据calib文件夹底下的文件名来确定当处理的是哪一时刻的数据
     path = os.path.join(dataset_root,split,'calib')
-    # ids = get_all_files_name_in_folder(path)
+    ids = get_all_files_name_in_folder(path)
 
-    ids_file = os.path.join(current_path, 'ImageSets', f'{data_type}.txt')
-    with open(ids_file, 'r') as f:
-        ids = [id.strip() for id in f.readlines()]
+    # ids_file = os.path.join(current_path, 'ImageSets', f'{data_type}.txt')
+    # with open(ids_file, 'r') as f:
+    #     ids = [id.strip() for id in f.readlines()]
 
     print(f"Processing {data_type} data..")
     all_info_dict = {}
